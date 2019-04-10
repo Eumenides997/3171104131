@@ -8,15 +8,41 @@ public class text1 {
 		
 		String s="this is a test of java";
 		char[] s1=s.toCharArray();
+		String[] s3=new String[s.length()];
+		int star=0;
+		int count=0;
+		int end=s.length();
+		for(int i=0;i<s.length();i++) {
+			if(s1[i]==' ') {
+				end=i;
+				String s2=s.substring(star,end);
+				s3[count]=s2;
+				count++;
+				star=end+1;
+			}
+		}
+		String last=s.substring(star,s.length());
+		s3[count]=last;
+		for(int i=0;i<=count;i++) {
+			System.out.println(s3[i]);
+		}
+		//第1题的第（6）小题
+		
+		
+		
 		//第一种倒序输出
 		
 		for(int i=s.length()-1;i>=0;i--) {
 			System.out.print(s1[i]);
 		}
-		System.out.print("\n");
-		
+		System.out.print("\n");		
+		//第二种倒叙输出
 		StringBuffer s2=new StringBuffer(s);
 		System.out.print(s2.reverse());
+		//第1题的第（5）小题
+		
+		
+		
 		
 		/*String[] split = s.split(" ");
 		
