@@ -11,13 +11,20 @@ public class text1 {
 		char[] s1=s.toCharArray();
 		int number=0;
 		
+		char[] str=s.toCharArray();
+		System.out.print("存到字符数组str:  ");
+		
+		for(int i=0;i<s.length();i++) {
+			System.out.print(str[i]);
+		}
+		
 		/*for(int i=0;i<s.length();i++) {
 			if(s1[i]=='s') {
 				number++;
 			}
 		}
 		
-		System.out.print("'s'的个数: "+number+"个");*/
+		System.out.print("'s'的个数: "+number+"个")
 		//第1题的第（1）小题
 		
 		for(int i=0;i<s.length();i++) {
@@ -26,7 +33,8 @@ public class text1 {
 			}
 		}
 		//第1题的第（2）小题
-		
+		;*/	
+				
 	}
 
 }
