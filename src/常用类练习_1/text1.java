@@ -7,14 +7,25 @@ public class text1 {
 	public static void main(String[] args) throws IOException{
 		
 		String s="this is a test of java";
-		String[] split = s.split(" ");
+		char[] s1=s.toCharArray();
+		//第一种倒序输出
+		
+		for(int i=s.length()-1;i>=0;i--) {
+			System.out.print(s1[i]);
+		}
+		System.out.print("\n");
+		
+		StringBuffer s2=new StringBuffer(s);
+		System.out.print(s2.reverse());
+		
+		/*String[] split = s.split(" ");
 		
 		for(int i=0;i<split.length;i++) {
 			String s1 = split[i].substring(0, 1).toUpperCase()+split[i].substring(1);
 			System.out.print(s1+" ");
 		}//第1题的第（4）小题
 		
-		/*int number=0;
+		int number=0;
 		
 		char[] str=s.toCharArray();
 		System.out.print("存到字符数组str:  ");
