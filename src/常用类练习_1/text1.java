@@ -1,24 +1,29 @@
 package 常用类练习_1;
 
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class text1 {
 	
 	public static void main(String[] args) throws IOException{
 		
 		String s="this is a test of java";
-		char[] s1=s.toCharArray();
-		int number=0;
+		String[] split = s.split(" ");
+		
+		for(int i=0;i<split.length;i++) {
+			String s1 = split[i].substring(0, 1).toUpperCase()+split[i].substring(1);
+			System.out.print(s1+" ");
+		}//第1题的第（4）小题
+		
+		/*int number=0;
 		
 		char[] str=s.toCharArray();
 		System.out.print("存到字符数组str:  ");
 		
 		for(int i=0;i<s.length();i++) {
 			System.out.print(str[i]);
-		}
+		}//第1题的第（3）小题
 		
-		/*for(int i=0;i<s.length();i++) {
+		for(int i=0;i<s.length();i++) {
 			if(s1[i]=='s') {
 				number++;
 			}
