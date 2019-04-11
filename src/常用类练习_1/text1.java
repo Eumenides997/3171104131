@@ -7,7 +7,8 @@ public class text1 {
 	public static void main(String[] args) throws IOException{
 		
 		String s="this is a test of java";
-		char[] s1=s.toCharArray();
+		
+		/*char[] s1=s.toCharArray();
 		String[] s3=new String[s.length()];
 		int star=0;
 		int count=0;
@@ -44,7 +45,7 @@ public class text1 {
 		
 		
 		
-		/*String[] split = s.split(" ");
+		String[] split = s.split(" ");
 		
 		for(int i=0;i<split.length;i++) {
 			String s1 = split[i].substring(0, 1).toUpperCase()+split[i].substring(1);
