@@ -113,6 +113,16 @@ public class text4 implements ActionListener {
 		 System.out.println(s7);
 		 //第(9)题
 		 
+		 String s8="%...%CXLL=add1,31,123.12%CXLL=add2,32,124%CXLL=,33,125.12%LL=-121.11";
+		 Pattern p3=Pattern.compile("(%CXLL=)(.*)(%)");
+		 Matcher m3=p3.matcher(s8);
+		 StringBuffer s9=new StringBuffer();
+		 while(m3.find()) {
+				 s9.append(m3.group());
+		 }
+		 System.out.println("提取的字符串:"+s9);
+		 //第(10)题
+		 
 	}
 
 
