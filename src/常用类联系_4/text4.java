@@ -85,6 +85,25 @@ public class text4 implements ActionListener {
 		 System.out.println(s4.matches("(.*)(abc)"));
 		 //第(6)题
 		 
+		 //第(7)题 这个选做我不会做，我选择不做
+		 
+		 String s5="256as-348as-d6";
+		 int[] arr=new int[20];
+		 Pattern p1=Pattern.compile("(\\d{1,4})");
+		 Matcher m1=p1.matcher(s5);
+		 int i=0;
+		 while(m1.find()) {
+			 int j=0;
+			 j=Integer.parseInt(m1.group());
+			 arr[i]=j;
+			 i++;
+		 }
+		 for(int k=0;k<i;k++) {
+			 System.out.println("数组["+k+"]:"+arr[k]);
+		 }
+		 //第(8)题
+		 
+		 
 		 
 	}
 
