@@ -26,6 +26,14 @@ public class text4 {
 		String s12=s1.replaceAll("(.)(\\1)*","$1");
 		System.out.println(s12);
 		//第(3)题
+		
+        String s2="abcabcabc";
+		
+		String s22=s2.replaceAll("(abc)(\\1)*","$1");
+		System.out.println(s22);
+		//第(4)题
+		
+		
 	}
 
 }
