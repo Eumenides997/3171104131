@@ -103,7 +103,15 @@ public class text4 implements ActionListener {
 		 }
 		 //第(8)题
 		 
-		 
+		 String s6="asdasdpupelassdasdpupelasdasdpupelasdpupel";
+		 Pattern p11=Pattern.compile("(pupel)");
+		 Matcher m11=p11.matcher(s6);
+		 StringBuffer s7=new StringBuffer();
+		 while(m11.find()) {
+				 m11.appendReplacement(s7, "pupil");
+		 }
+		 System.out.println(s7);
+		 //第(9)题
 		 
 	}
 
