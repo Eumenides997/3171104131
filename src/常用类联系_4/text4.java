@@ -20,6 +20,12 @@ public class text4 {
 			System.out.println(m.group());
 		}
 		//第(2)题  PS:照书上的ip地址表达式写的，可能有几率出错
+		
+		String s1="aaaabbbbccccddd";
+		
+		String s12=s1.replaceAll("(.)(\\1)*","$1");
+		System.out.println(s12);
+		//第(3)题
 	}
 
 }
