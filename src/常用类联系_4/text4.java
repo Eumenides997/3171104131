@@ -14,9 +14,6 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
-import BW.SqlUse;
-import FW.GLView;
-
 public class text4 implements ActionListener {
 	
 	private Frame myframe;
@@ -74,7 +71,7 @@ public class text4 implements ActionListener {
 		String s22=s2.replaceAll("(abc)(\\1)*","$1");
 		System.out.println(s22);
 		//第(4)题
-		
+	/*	
 		 Scanner sc = new Scanner(System.in);
 		 String s3=sc.next();
 		 System.out.println(s3.matches("\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*"));
@@ -82,6 +79,13 @@ public class text4 implements ActionListener {
 		 new text4().view();
 		 //GUI界面调用 PS:只做了输入，没有把结果显示在界面直接把结果输出在控制台了
 		 //第(5)题
+	*/	 
+		
+		 String s4="asdasdasdawdasdsadabc";
+		 System.out.println(s4.matches("(.*)(abc)"));
+		 //第(6)题
+		 
+		 
 	}
 
 
